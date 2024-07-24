@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    /* position: absolute; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20vw;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#clickMe {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    background: #1dacff;
+    border-radius: 15%;
+    padding: 15px 20px;
+}
+
+#clickMe a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hbd {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-size: 50px;
+}
+
+.wiggle {
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+}
+
+#wish {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-size: 25px;
+    margin: 20px;
+}
+
+@-webkit-keyframes wiggle {
+    0% {
+        -webkit-transform: rotate(10deg);
+    }
+    25% {
+        -webkit-transform: rotate(-15deg);
+    }
+    50% {
+        -webkit-transform: rotate(25deg);
+    }
+    75% {
+        -webkit-transform: rotate(-15deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-ms-keyframes wiggle {
+    0% {
+        -ms-transform: rotate(1deg);
+    }
+    25% {
+        -ms-transform: rotate(-1deg);
+    }
+    50% {
+        -ms-transform: rotate(1.5deg);
+    }
+    75% {
+        -ms-transform: rotate(-5deg);
+    }
+    100% {
+        -ms-transform: rotate(0deg);
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
